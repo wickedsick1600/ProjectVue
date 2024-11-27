@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>..\projectvue.client</SpaRoot>
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:62429</SpaProxyServerUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\dist\assets\index-BjYKSfnd.css" />
+    <Content Remove="wwwroot\dist\assets\index-BwTDohbV.js" />
+    <Content Remove="wwwroot\dist\assets\moviesBG-BOuivjdZ.png" />
+    <Content Remove="wwwroot\dist\assets\quoteBG-b3UbqNAK.png" />
+    <Content Remove="wwwroot\dist\assets\slotSound-DZjCVPLg.mp3" />
+    <Content Remove="wwwroot\dist\favicon.ico" />
+    <Content Remove="wwwroot\dist\index.html" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\src\App.vue" />
+    <Content Remove="wwwroot\src\assets\base.css" />
+    <Content Remove="wwwroot\src\assets\logo.svg" />
+    <Content Remove="wwwroot\src\assets\main.css" />
+    <Content Remove="wwwroot\src\assets\moviesBG.png" />
+    <Content Remove="wwwroot\src\assets\placeholder.png" />
+    <Content Remove="wwwroot\src\assets\quoteBG.png" />
+    <Content Remove="wwwroot\src\assets\slotSound.mp3" />
+    <Content Remove="wwwroot\src\assets\tictactoeBG.png" />
+    <Content Remove="wwwroot\src\components\Header.vue" />
+    <Content Remove="wwwroot\src\components\HelloWorld.vue" />
+    <Content Remove="wwwroot\src\components\icons\IconCommunity.vue" />
+    <Content Remove="wwwroot\src\components\icons\IconDocumentation.vue" />
+    <Content Remove="wwwroot\src\components\icons\IconEcosystem.vue" />
+    <Content Remove="wwwroot\src\components\icons\IconSupport.vue" />
+    <Content Remove="wwwroot\src\components\icons\IconTooling.vue" />
+    <Content Remove="wwwroot\src\components\MoviesComponents\movieCard.vue" />
+    <Content Remove="wwwroot\src\components\QuoteGeneratorComponents\newFave.vue" />
+    <Content Remove="wwwroot\src\components\RouletteComponents\indiBox.vue" />
+    <Content Remove="wwwroot\src\components\TheWelcome.vue" />
+    <Content Remove="wwwroot\src\components\Tic-tac-toeComponents\Tic-tac-toe-Game.vue" />
+    <Content Remove="wwwroot\src\components\Tic-tac-toeComponents\Tic-tac-toe-Menu.vue" />
+    <Content Remove="wwwroot\src\components\Tic-tac-toeComponents\Tic-tac-toe-Popups\playAgainPopup.vue" />
+    <Content Remove="wwwroot\src\components\Tic-tac-toeComponents\ticBox.vue" />
+    <Content Remove="wwwroot\src\components\WelcomeItem.vue" />
+    <Content Remove="wwwroot\src\main.js" />
+    <Content Remove="wwwroot\src\store\movie.js" />
+    <Content Remove="wwwroot\src\store\quote.js" />
+    <Content Remove="wwwroot\src\store\roulette.js" />
+    <Content Remove="wwwroot\src\store\tictactoe.js" />
+    <Content Remove="wwwroot\src\views\Home.vue" />
+    <Content Remove="wwwroot\src\views\index.js" />
+    <Content Remove="wwwroot\src\views\Movies.vue" />
+    <Content Remove="wwwroot\src\views\QuoteGenerator.vue" />
+    <Content Remove="wwwroot\src\views\Roulette.vue" />
+    <Content Remove="wwwroot\src\views\Tic-tac-toe.vue" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
+      <Version>8.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\projectvue.client\projectvue.client.esproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\dist\assets\index-BjYKSfnd.css" />
+    <None Include="wwwroot\dist\assets\index-BwTDohbV.js" />
+    <None Include="wwwroot\dist\assets\moviesBG-BOuivjdZ.png" />
+    <None Include="wwwroot\dist\assets\quoteBG-b3UbqNAK.png" />
+    <None Include="wwwroot\dist\assets\slotSound-DZjCVPLg.mp3" />
+    <None Include="wwwroot\dist\favicon.ico" />
+    <None Include="wwwroot\dist\index.html" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\src\App.vue" />
+    <None Include="wwwroot\src\assets\base.css" />
+    <None Include="wwwroot\src\assets\logo.svg" />
+    <None Include="wwwroot\src\assets\main.css" />
+    <None Include="wwwroot\src\assets\moviesBG.png" />
+    <None Include="wwwroot\src\assets\placeholder.png" />
+    <None Include="wwwroot\src\assets\quoteBG.png" />
+    <None Include="wwwroot\src\assets\slotSound.mp3" />
+    <None Include="wwwroot\src\assets\tictactoeBG.png" />
+    <None Include="wwwroot\src\components\Header.vue" />
+    <None Include="wwwroot\src\components\HelloWorld.vue" />
+    <None Include="wwwroot\src\components\icons\IconCommunity.vue" />
+    <None Include="wwwroot\src\components\icons\IconDocumentation.vue" />
+    <None Include="wwwroot\src\components\icons\IconEcosystem.vue" />
+    <None Include="wwwroot\src\components\icons\IconSupport.vue" />
+    <None Include="wwwroot\src\components\icons\IconTooling.vue" />
+    <None Include="wwwroot\src\components\MoviesComponents\movieCard.vue" />
+    <None Include="wwwroot\src\components\QuoteGeneratorComponents\newFave.vue" />
+    <None Include="wwwroot\src\components\RouletteComponents\indiBox.vue" />
+    <None Include="wwwroot\src\components\TheWelcome.vue" />
+    <None Include="wwwroot\src\components\Tic-tac-toeComponents\Tic-tac-toe-Game.vue" />
+    <None Include="wwwroot\src\components\Tic-tac-toeComponents\Tic-tac-toe-Menu.vue" />
+    <None Include="wwwroot\src\components\Tic-tac-toeComponents\Tic-tac-toe-Popups\playAgainPopup.vue" />
+    <None Include="wwwroot\src\components\Tic-tac-toeComponents\ticBox.vue" />
+    <None Include="wwwroot\src\components\WelcomeItem.vue" />
+    <None Include="wwwroot\src\main.js" />
+    <None Include="wwwroot\src\store\movie.js" />
+    <None Include="wwwroot\src\store\quote.js" />
+    <None Include="wwwroot\src\store\roulette.js" />
+    <None Include="wwwroot\src\store\tictactoe.js" />
+    <None Include="wwwroot\src\views\Home.vue" />
+    <None Include="wwwroot\src\views\index.js" />
+    <None Include="wwwroot\src\views\Movies.vue" />
+    <None Include="wwwroot\src\views\QuoteGenerator.vue" />
+    <None Include="wwwroot\src\views\Roulette.vue" />
+    <None Include="wwwroot\src\views\Tic-tac-toe.vue" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@ProjectVue.Server_HostAddress = http://localhost:5111
+
+GET {{ProjectVue.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
